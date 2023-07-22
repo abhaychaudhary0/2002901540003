@@ -1,6 +1,6 @@
 exports.numbers = async(req,res)=>{
-         const data = req.body;
-        const sorteddata = data.sort();
+         const {numbers} = req.body;
+        const sorteddata = numbers.sort();
         return res.json({
             "numbers":sorteddata
         })
